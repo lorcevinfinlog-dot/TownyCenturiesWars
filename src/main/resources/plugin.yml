@@ -1,0 +1,53 @@
+name: TownyCenturiesWars
+version: 1.0.0
+description: Система эпох и войн для Towny
+author: YourName
+main: com.towny.centuries.TownyCenturiesWarsPlugin
+depend: [Towny]
+softdepend: [SkBee]
+
+commands:
+  century:
+    description: Открывает меню выбора эпохи
+    usage: /century
+    aliases: [c]
+  
+  wars:
+    description: Система войн между нациями
+    usage: /wars
+    aliases: [war, battle]
+  
+  armory:
+    description: Оружейная - доступна с эпохи Возрождения
+    usage: /armory
+    aliases: [weapons]
+  
+  veh:
+    description: Покупка транспортных средств
+    usage: /veh
+    aliases: [vehicle, transport]
+
+permissions:
+  townycenturies.use:
+    description: Право использовать команду /century
+    default: true
+  
+  townycenturies.wars.use:
+    description: Право использовать систему войн
+    default: true
+  
+  townycenturies.wars.declare:
+    description: Право объявлять войну
+    default: op
+  
+  townycenturies.armory.use:
+    description: Право использовать оружейную
+    default: true
+  
+  townycenturies.veh.buy:
+    description: Право покупать транспортные средства
+    default: true
+  
+  townycenturies.admin:
+    description: Администраторские права плагина
+    default: op
